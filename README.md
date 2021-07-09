@@ -22,6 +22,8 @@
 - ```docker volume create assets```
 3. Заинитить airflow: ```docker-compose up -d --scale workers=3```
 4. Если хотим ставить воркеров на других тачках, запускать только сервис ```workers``` с нужным скейлом и прописать пути до мастер ноды в конфиге
+5. Если нужны ассеты, положить их в ```var/lib/docker/volumes/assets/_data``` на всех воркерах
+6. Результаты пересчетов кладутся в ```var/lib/docker/volumes/results/_data```
 
 # Использование
 
